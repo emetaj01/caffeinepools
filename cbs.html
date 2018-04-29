@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Caffeine Pools</title>
+<link href="cbsstyle.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+<h1 id="Title">Caffeine Pools!</h1>
+
+<video src="CaffeinePools.mp4" id="video" controls></video>
+<p><span id="timer"></span></p>
+<div id="captions"></div> 
+<div id="Image"></div>
+
+<script type="text/javascript">
+	var video = document.getElementById("video");
+	var caption = document.getElementById("captions");
+	var image = document.getElementById("Image");
+	var timer = document.getElementById("timer");
+	video.addEventListener("timeupdate", function() {
+	
+		//timer.innerHTML = video.currentTime;
+		
+		if (video.currentTime < 30) {
+			caption.innerHTML ="<h3>Caffeine Pools!</h3>";
+		}
+		else if (video.currentTime > 31 && video.currentTime < 34) {
+			caption.innerHTML = "<h3>Pour up, drank, espresso shot, drank</h3>";
+		}
+		else if (video.currentTime > 34.5 && video.currentTime < 37.5) {
+			caption.innerHTML = "<h1>Sit down, drank, stand up, drank</h1>";
+		}
+		else if (video.currentTime > 38 && video.currentTime < 41.3) {
+			caption.innerHTML = "<h1>Pass out, drank, wake up, drank</h1>";
+		}
+
+		else if (video.currentTime > 41.50 && video.currentTime < 44.2) {
+			caption.innerHTML = "<h3>Jittered, drank, Craving, drank</h3>";
+		}
+		else if (video.currentTime > 44 && video.currentTime < 47.5) {
+			caption.innerHTML = "<h1>College students live their life coffee cup by cup</h1>";
+		}
+		else if (video.currentTime > 48 && video.currentTime < 50.5) {
+			caption.innerHTML = "<h3>Going to the rez but never to bed -- Was up?</h3>";
+		}
+		else if (video.currentTime > 50.8 && video.currentTime < 52.2) {
+			caption.innerHTML = "<h1>What is caffeine? </h1>";
+		}
+		else if (video.currentTime > 52.4&& video.currentTime < 54) {
+			caption.innerHTML = "<h1>Methylxanthine!</h1>";
+		}
+		else if (video.currentTime > 54.2 && video.currentTime < 56) {
+			caption.innerHTML = "<h2>There coffee, theres tea, there's cocoa beans</h2>";
+		}
+		else if (video.currentTime > 56.5 && video.currentTime < 61.5) {
+			caption.innerHTML = "<h3>But the guarana berry, so legendary, carry you to the library, take sleep to the cemetery!</h3>";
+		}
+		else if (video.currentTime > 61.7 && video.currentTime < 64.8) {
+			caption.innerHTML = "<h2>Yeah, only 4 coffee cups you should chug, it's a powerful drug </h2>";
+		}
+		else if (video.currentTime > 65 && video.currentTime < 66.4) {
+			caption.innerHTML = "<h1>More than one, kids won't go to bed!</h1>";
+		}
+		else if (video.currentTime > 66.8 && video.currentTime < 70.4) {
+			caption.innerHTML = "<h3>I don't want to leave this unsaid, but over 75 leaves you dead</h3>";
+		}
+		else if (video.currentTime > 71 && video.currentTime < 73) {
+			caption.innerHTML = "<h3>Why you sipping 2 to 3 espresso shots </h3>";
+		}
+		else if (video.currentTime > 73.5 && video.currentTime < 75.7) {
+			caption.innerHTML = "<h1>Imma show you how to speed up your thoughts </h1>";
+		}
+		else if (video.currentTime > 76 && video.currentTime < 79.8) {
+			caption.innerHTML = "<h2>See because my brain's dependent on caffeine, and I thrive on it </h2>";
+		}
+		else if (video.currentTime > 80 && video.currentTime < 83) {
+			caption.innerHTML = "<h3>You're not dependent on caffeine, it's contrived, gosh darn it</h3>";
+		}
+		else if (video.currentTime > 83.1 && video.currentTime < 86) {
+			caption.innerHTML = "<h2>But I get lattes with my friends; it's a habit I contend</h2>";
+		}
+		else if (video.currentTime > 86.5 && video.currentTime < 88.5) {
+			caption.innerHTML = "<h1>Facing symptoms of withdrawal if it ends</h1>";
+		}
+		else if (video.currentTime > 89 && video.currentTime < 92.8) {
+			caption.innerHTML = "<h3>See because my brain's dependent on caffeine, and I thrive on it</h3>";
+		}
+		else if (video.currentTime > 92.9 && video.currentTime < 96.4) {
+			caption.innerHTML = "<h3>You're not dependent on caffeine, it's contrived, gosh darn it</h3>";
+		}
+		else if (video.currentTime > 96.7 && video.currentTime < 99.3) {
+			caption.innerHTML = "<h3>Pour up, drank, espresso shot, drank</h3>";
+		}
+		else if (video.currentTime > 99.5 && video.currentTime < 102.3) {
+			caption.innerHTML = "<h1>cortado, drank, americano, drank</h1>";
+		}
+		else if (video.currentTime > 102.6 && video.currentTime < 105.7) {
+			caption.innerHTML = "<h1>Earl grey, drank, yerba mate, drank</h1>";
+		}
+		else if (video.currentTime > 106.5 && video.currentTime < 109.1) {
+			caption.innerHTML = "<h3>Jittered, drank, Craving, drank</h3>";
+		}else if (video.currentTime > 109.5 && video.currentTime < 113.8) {
+			caption.innerHTML = "<h3>Okay, now open your receptors and let me bind to you, brain.</h3>";
+		}
+		else if (video.currentTime > 114 && video.currentTime < 117) {
+			caption.innerHTML = "<h3>I am caffeine, hoping to reduce the drain.</h3>";
+		}
+		else if (video.currentTime > 117.1 && video.currentTime < 120.1) {
+			caption.innerHTML = "<h1>If I don't bind, adenosine will ruin your routine</h1>";
+		}
+		else if (video.currentTime > 120.5 && video.currentTime < 123.5) {
+			caption.innerHTML = "<h1>Reducing arousal until you feel mean</h1>";
+		}
+		else if (video.currentTime > 124 && video.currentTime < 126.9) {
+			caption.innerHTML = "<h3>But you know me, I'll antagonize</h3>";
+		}
+		else if (video.currentTime > 127 && video.currentTime < 130) {
+			caption.innerHTML = "<h1>Those adenosine receptors, you'll be energized!</h1>";
+		}
+		else if (video.currentTime > 130.2 && video.currentTime < 133.3) {
+			caption.innerHTML = "<h1>I'm especially liked by receptor A2A</h1>";
+		}
+		else if (video.currentTime > 133.5 && video.currentTime < 135.6) {
+			caption.innerHTML = "<h3>I'll surely give a boost to your day</h3>";
+		}
+		else if (video.currentTime > 136 && video.currentTime < 138.2) {
+			caption.innerHTML = "<h3>Why you sipping 2 to 3 espresso shots </h3>";
+		}
+		else if (video.currentTime > 138.4 && video.currentTime < 140.7) {
+			caption.innerHTML = "<h1>Imma show you how to speed up your thoughts </h1>";
+		}
+		else if (video.currentTime > 141 && video.currentTime < 144.6) {
+			caption.innerHTML = "<h2>See because my brain's dependent on caffeine, and I thrive on it </h2>";
+		}
+		else if (video.currentTime > 144.8 && video.currentTime < 147.8) {
+			caption.innerHTML = "<h3>You're not dependent on caffeine, it's contrived, gosh darn it</h3>";
+		}
+		else if (video.currentTime > 148 && video.currentTime < 151) {
+			caption.innerHTML = "<h2>But I get lattes with my friends; it's a habit I contend</h2>";
+		}
+		else if (video.currentTime > 151.4 && video.currentTime < 153.5) {
+			caption.innerHTML = "<h1>Facing symptoms of withdrawal if it ends</h1>";
+		}
+		else if (video.currentTime > 154 && video.currentTime < 157.8) {
+			caption.innerHTML = "<h3>See because my brain's dependent on caffeine, and I thrive on it</h3>";
+		}
+		else if (video.currentTime > 157.9 && video.currentTime < 161.3) {
+			caption.innerHTML = "<h3>You're not dependent on caffeine, it's contrived, gosh darn it</h3>";
+		}
+			else if (video.currentTime > 161.5 && video.currentTime < 164) {
+			caption.innerHTML = "<h2>Pour up, drank, espresso shot, drank</h2>";
+		}
+		else if (video.currentTime > 164.2 && video.currentTime < 167.3) {
+			caption.innerHTML = "<h1>macchiato, drank, frappucino, drank</h1>";
+		}
+		else if (video.currentTime > 167.5 && video.currentTime < 170.7) {
+			caption.innerHTML = "<h3>Coca cola, drank, caffeine pills, drank</h3>";
+		}
+		else if (video.currentTime > 170.8 && video.currentTime < 173.9) {
+			caption.innerHTML = "<h3>Jittered, drank, Craving, drank</h3>";
+		}
+		else if (video.currentTime > 174 && video.currentTime < 177.2) {
+			caption.innerHTML = "<h3>Half life, three to seven hours</h3>";
+		}
+				else if (video.currentTime > 177.5 && video.currentTime < 180.4) {
+			caption.innerHTML = "<h3>Quitting caffeine reduces your cognitive powers</h3>";
+		}
+			else if (video.currentTime > 180.5 && video.currentTime < 183.6) {
+			caption.innerHTML = "<h2>Old people, are more sensitive than teens</h2>";
+		}
+		else if (video.currentTime > 184 && video.currentTime < 187) {
+			caption.innerHTML = "<h1>Metabolization is affected by your genes</h1>";
+		}
+		else if (video.currentTime > 187.5 && video.currentTime < 189.9) {
+			caption.innerHTML = "<h3>Habitual drinkers learn to tolerate</h3>";
+		}
+		else if (video.currentTime > 190 && video.currentTime < 193.5) {
+			caption.innerHTML = "<h3>The increase in anxiety... and heart rate</h3>";
+		}
+		else if (video.currentTime > 193.7 && video.currentTime < 196.6) {
+			caption.innerHTML = "<h3>But less tolerance develops for the positive effects</h3>";
+		}
+		else if (video.currentTime > 196.9  && video.currentTime < 200) {
+			caption.innerHTML = "<h3>Attention stays high as you do your projects</h3>";
+		}
+else if (video.currentTime > 200.5 && video.currentTime < 203) {
+			caption.innerHTML = "<h3>Why you sipping 2 to 3 espresso shots </h3>";
+		}
+		else if (video.currentTime > 203.5 && video.currentTime < 205.5) {
+			caption.innerHTML = "<h1>Imma show you how to speed up your thoughts </h1>";
+		}
+		else if (video.currentTime > 205.6 && video.currentTime < 209) {
+			caption.innerHTML = "<h2>See because my brain's dependent on caffeine, and I thrive on it </h2>";
+		}
+		else if (video.currentTime > 209.5 && video.currentTime < 213) {
+			caption.innerHTML = "<h3>You're not dependent on caffeine, it's contrived, gosh darn it</h3>";
+		}
+		else if (video.currentTime > 213.1 && video.currentTime < 216) {
+			caption.innerHTML = "<h2>But I get lattes with my friends; it's a habit I contend</h2>";
+		}
+		else if (video.currentTime > 216.3 && video.currentTime < 218) {
+			caption.innerHTML = "<h1>Facing symptoms of withdrawal if it ends</h1>";
+		}
+		else if (video.currentTime > 218.8 && video.currentTime < 222.5) {
+			caption.innerHTML = "<h3>See because my brain's dependent on caffeine, and I thrive on it</h3>";
+		}
+		else if (video.currentTime > 222.8 && video.currentTime < 222.5) {
+			caption.innerHTML = "<h3>You're not dependent on caffeine, it's contrived, gosh darn it</h3>";
+		}
+		else if (video.currentTime > 226.68 && video.currentTime < 229.1) {
+			caption.innerHTML = "<h1>Pour up, drank, espresso shot, drank</h1>";
+		}
+		else if (video.currentTime > 229.4 && video.currentTime < 232.3) {
+			caption.innerHTML = "<h3>Kola nuts, drank, chocolate, drank</h3>";
+		}
+		else if (video.currentTime > 232.9 && video.currentTime < 235.7) {
+			caption.innerHTML = "<h3>Red bull, drank, chai, drank</h3>";
+		}
+		else if (video.currentTime > 235.9 && video.currentTime < 239.9) {
+			caption.innerHTML = "<h2>Jittered, drank, Craving, drank</h2>";
+		}
+		else {
+			caption.innerHTML ="";
+		}
+		}, false);
+</script>
+
+<p></p>
+<p></p>
+
+<h1  id="source"> Sources Used: </h1>
+<p> <a id = "link" href="https://www.youtube.com/watch?v=y7NhQYgeCkA">https://www.youtube.com/watch?v=y7NhQYgeCkA</a></p>
+<p> <a <a id = "link" href="https://www.youtube.com/watch?v=jOfquPE1cnU">https://www.youtube.com/watch?v=jOfquPE1cnU</a> </p>
+<p> <a id = "link" href="https://www.youtube.com/watch?v=_Ev1zdxbXTY">https://www.youtube.com/watch?v=_Ev1zdxbXTY</a> </p>
+<p> <a id = "link" href="https://youtu.be/alm_w22CboE">https://youtu.be/alm_w22CboE</a> </p>
+<p> <a id = "link" href="https://youtu.be/AGx9xbYEC8k">https://youtu.be/AGx9xbYEC8k</a> </p>
+
+
+
+</body>
+</html>
