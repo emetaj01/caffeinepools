@@ -1,0 +1,41 @@
+body {
+	background-image: url("coffee.png");
+
+	background-size: 1300px;
+}
+
+video {
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+		width: 800px;
+}
+
+#captions{
+
+	text-align: center;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #e67300;
+}
+
+#Title{
+
+		text-align: center;
+		font-size: 40px;
+		font-weight: bold;
+		color: #ffecb3;
+
+
+
+}
+
+#source{
+	color: #ffecb3;
+}
+
+#link{
+	color:  #4d94ff;
+	font-weight: bold;
+
+}
